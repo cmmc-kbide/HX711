@@ -1,0 +1,382 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id="AnA|Rr95@=mWO:T@kV3G" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"/>
+    <field name="NAME">hx711_begin</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="hu`fH5t_2hq#6%G*y~:(">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="zd^;GKoTjo4410102^M!">
+            <field name="TEXT">HX711 begin (pin out =</field>
+            <next>
+              <block type="field_number" id="7|;RIbM5@!^^6h=!pMp+">
+                <field name="VALUE">2</field>
+                <field name="FIELDNAME">out</field>
+                <field name="MIN">0</field>
+                <field name="MAX">255</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id=",7`3;Anmv|iyoJa)}@uI">
+                    <field name="TEXT">,pin sck=</field>
+                    <next>
+                      <block type="field_number" id="}(HR?vL#j?@WCOLNlN{j">
+                        <field name="VALUE">3</field>
+                        <field name="FIELDNAME">sck</field>
+                        <field name="MIN">-Infinity</field>
+                        <field name="MAX">Infinity</field>
+                        <field name="PRECISION">0</field>
+                        <next>
+                          <block type="field_static" id="hAc`9(RChy7~IJ%ate;~">
+                            <field name="TEXT">)</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="c9JdMB{|m,-%S?4gyvS1" deletable="false" movable="false">
+        <field name="TEXT">block begin sensor HX711</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="_*ZCPH%8}.A0=`DDz_^2" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="g[WWZDi[bM/fn6S)jVi-"/>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="3H^]vS!;U#4:p+9ub/IT"/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="W.SBk9`fY8*Z;,50o7;4">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,uZ[}se|^0NuvH3{4=T" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">hx711_is_ready</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="),j4~)nNhJ?3w;0D+Vw^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="89t{.Le)~{V^iX5P@c./">
+            <field name="TEXT">is sensor ready</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="P(VA){G206jm{9e+lB`:" deletable="false" movable="false">
+        <field name="TEXT">check is sensor ready to read data</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="=s!?@eGI$qFi][SquiXS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="7/cUKg#(YlP:Xk/g_?vR"/>
+      <block type="type_group" id=")+9h?H%[G,{k)M|qjtQ{">
+        <mutation types="2"/>
+        <value name="TYPE0">
+          <block type="type_boolean" id="hl{VJETEL0$RUR]GP)5]"/>
+        </value>
+        <value name="TYPE1">
+          <block type="type_number" id="Oh+j$PG}FMV^Wz7,v%Tz"/>
+        </value>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="):pm+D7~qBWvc87(3rlJ">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,uZ[}se|^0NuvH3{4=T" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">hx711_read</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="),j4~)nNhJ?3w;0D+Vw^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="89t{.Le)~{V^iX5P@c./">
+            <field name="TEXT">read raw data</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="P(VA){G206jm{9e+lB`:" deletable="false" movable="false">
+        <field name="TEXT">read raw data from sensor</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="=s!?@eGI$qFi][SquiXS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="=6Eu_eRff(gdx_.yST05"/>
+      <block type="type_number" id="Oh+j$PG}FMV^Wz7,v%Tz"/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="):pm+D7~qBWvc87(3rlJ">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,uZ[}se|^0NuvH3{4=T" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">hx711_read_average</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="),j4~)nNhJ?3w;0D+Vw^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="89t{.Le)~{V^iX5P@c./">
+            <field name="TEXT">read raw average data</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="tqoa*#x;;cuE.VjHAjL[">
+            <field name="INPUTNAME">avg_count</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="[-c|NHUe1m-9`Gf4]^Uy"/>
+              <block type="type_number" id="z:M?B9p+HS2#{Osu|@l{"/>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="P(VA){G206jm{9e+lB`:" deletable="false" movable="false">
+        <field name="TEXT">read average raw data from sensor</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="=s!?@eGI$qFi][SquiXS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="Zze6x6%]:G(TmI-k|L,9"/>
+      <block type="type_number" id="Oh+j$PG}FMV^Wz7,v%Tz"/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="):pm+D7~qBWvc87(3rlJ">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,uZ[}se|^0NuvH3{4=T" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">hx711_get_value</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="),j4~)nNhJ?3w;0D+Vw^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="89t{.Le)~{V^iX5P@c./">
+            <field name="TEXT">read average data - tare offset</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="tqoa*#x;;cuE.VjHAjL[">
+            <field name="INPUTNAME">avg_count</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="[-c|NHUe1m-9`Gf4]^Uy"/>
+              <block type="type_number" id="z:M?B9p+HS2#{Osu|@l{"/>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="P(VA){G206jm{9e+lB`:" deletable="false" movable="false">
+        <field name="TEXT">read average raw data - offset from tare function from sensor</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="=s!?@eGI$qFi][SquiXS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="EE^vN[.3kR(EQd*h+vg8"/>
+      <block type="type_group" id="abd)jblckg(Fi#zZPNwl">
+        <mutation types="2"/>
+        <value name="TYPE0">
+          <block type="type_other" id="fpXS3YurkR^zo*)*0hUS">
+            <field name="TYPE">double</field>
+          </block>
+        </value>
+        <value name="TYPE1">
+          <block type="type_number" id="{nHJ(IwZ+R2_WFk;GW}M"/>
+        </value>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="):pm+D7~qBWvc87(3rlJ">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,uZ[}se|^0NuvH3{4=T" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"/>
+    <field name="NAME">hx711_get_units</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="),j4~)nNhJ?3w;0D+Vw^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="89t{.Le)~{V^iX5P@c./">
+            <field name="TEXT">read average value / scale</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="tqoa*#x;;cuE.VjHAjL[">
+            <field name="INPUTNAME">avg_count</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="[-c|NHUe1m-9`Gf4]^Uy"/>
+              <block type="type_number" id="z:M?B9p+HS2#{Osu|@l{"/>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="P(VA){G206jm{9e+lB`:" deletable="false" movable="false">
+        <field name="TEXT">read (average raw data - offset)/scale from sensor</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="=s!?@eGI$qFi][SquiXS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="t6!thr9gu4ni@7{IoOW@"/>
+      <block type="type_group" id="abd)jblckg(Fi#zZPNwl">
+        <mutation types="2"/>
+        <value name="TYPE0">
+          <block type="type_other" id="fpXS3YurkR^zo*)*0hUS">
+            <field name="TYPE">float</field>
+          </block>
+        </value>
+        <value name="TYPE1">
+          <block type="type_number" id="{nHJ(IwZ+R2_WFk;GW}M"/>
+        </value>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="):pm+D7~qBWvc87(3rlJ">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,uZ[}se|^0NuvH3{4=T" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"/>
+    <field name="NAME">hx711_tare</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="),j4~)nNhJ?3w;0D+Vw^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="89t{.Le)~{V^iX5P@c./">
+            <field name="TEXT">tare</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="P(VA){G206jm{9e+lB`:" deletable="false" movable="false">
+        <field name="TEXT">tare, set weight to 0 and set offset</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="=s!?@eGI$qFi][SquiXS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="1tkRw3,VHdJm]bbxDCi,"/>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="-f3x^-{h:!u|v6Pi0X#D"/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="):pm+D7~qBWvc87(3rlJ">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+,uZ[}se|^0NuvH3{4=T" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"/>
+    <field name="NAME">hx711_set_scale</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="),j4~)nNhJ?3w;0D+Vw^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="89t{.Le)~{V^iX5P@c./">
+            <field name="TEXT">set scale</field>
+            <next>
+              <block type="field_number" id="w1Xpf2r`Ft{osj=VL+A2">
+                <field name="VALUE">2280</field>
+                <field name="FIELDNAME">scale</field>
+                <field name="MIN">-Infinity</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">1</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="P(VA){G206jm{9e+lB`:" deletable="false" movable="false">
+        <field name="TEXT">set scale to sensor</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="=s!?@eGI$qFi][SquiXS" deletable="false" movable="false">
+        <field name="TEXT"/>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="1tkRw3,VHdJm]bbxDCi,"/>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="-f3x^-{h:!u|v6Pi0X#D"/>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="):pm+D7~qBWvc87(3rlJ">
+        <mutation colour="#a55b93"/>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block></xml>
